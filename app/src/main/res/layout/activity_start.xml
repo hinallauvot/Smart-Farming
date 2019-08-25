@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tablayoutColor"
+    tools:context=".StartActivity">
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_above="@id/textView"
+        android:visibility="invisible"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/ic_plant"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/start_login_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:visibility="invisible"
+        android:text="Welcome to Smart \n Farming App"
+        android:textAlignment="center"
+        android:textColor="@color/silver"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+
+    <Button
+        android:id="@+id/start_reg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@android:color/white"
+        android:paddingLeft="25dp"
+        android:background="@drawable/button_corner"
+        android:visibility="invisible"
+        android:paddingRight="25dp"
+        android:text="@string/need_a_new_account"
+        android:textColor="@color/colorPrimary" />
+
+
+    <Button
+        android:id="@+id/start_login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/start_reg_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_corner1"
+        android:visibility="invisible"
+        android:backgroundTint="@color/colorAccent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="ALREADY HAVE ACCOUNT"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

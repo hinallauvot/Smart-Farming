@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+
+        android:id="@+id/bgapp"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="550dp"
+
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="8dp"
+
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/background_grid"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.923"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMART FARMING"
+        android:id="@+id/textTitle"
+        android:fontFamily="@font/drift"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints"
+/>
+
+
+    <LinearLayout
+
+        android:id="@+id/menus"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="200dp"
+
+        android:elevation="6dp"
+
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.726"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="70dp"
+
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:id="@+id/cd_queries"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="50dp"
+
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+
+
+
+
+                <ImageView
+
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="4dp"
+                    android:src="@drawable/queries" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Queries"
+                    android:textColor="#0E1843"
+                    android:textSize="22sp" />
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/cd_plans"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="50dp"
+
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+
+
+
+
+                <ImageView
+
+
+                    android:layout_width="100dp"
+
+                    android:layout_height="100dp"
+
+                    android:layout_marginBottom="4dp"
+
+                    android:src="@drawable/plans" />
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="Plans"
+
+                    android:textColor="#0E1843"
+
+                    android:textSize="22sp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="70dp"
+
+            android:orientation="horizontal">
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/cd_profile"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="50dp"
+
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+
+
+
+
+                <ImageView
+
+
+                    android:layout_width="100dp"
+
+                    android:layout_height="100dp"
+
+                    android:layout_marginBottom="4dp"
+
+                    android:src="@drawable/profile" />
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="Profile"
+
+                    android:textColor="#0E1843"
+
+                    android:textSize="22sp" />
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/cd_about"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="50dp"
+
+                android:gravity="center"
+
+                android:orientation="vertical">
+
+
+
+
+
+                <ImageView
+
+
+                    android:layout_width="100dp"
+
+                    android:layout_height="100dp"
+
+                    android:layout_marginBottom="4dp"
+
+                    android:src="@drawable/about" />
+
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:text="About"
+
+                    android:textColor="#0E1843"
+
+                    android:textSize="22sp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

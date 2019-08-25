@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/app_bar_layout"
+            android:id="@+id/profile_app_bar"/>
+
+
+
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/profile_app_bar"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_male" />
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="300dp"
+                android:id="@+id/CardView"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageProfile"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="18dp"
+                app:cardCornerRadius="20dp">
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmerFrameLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+
+
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+
+                        android:textColor="@android:color/black"
+                        android:drawableLeft="@drawable/ic_male"
+                        android:drawablePadding="15dp"
+                        android:text="Name"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:drawableLeft="@drawable/ic_phone_black_24dp"
+                        android:drawablePadding="15dp"
+                        android:text="Phone Number"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvName"
+                        android:textColor="@android:color/black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:drawableLeft="@drawable/ic_email_black_24dp"
+                        android:drawablePadding="15dp"
+                        android:text="Email"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/tvDistrict"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvName"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:drawableLeft="@drawable/ic_place_black_24dp"
+                        android:drawablePadding="15dp"
+                        android:text="District"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/tvTotalLand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvName"
+                        android:textColor="@android:color/black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:drawableLeft="@drawable/ic_place_black_24dp"
+                        android:drawablePadding="15dp"
+                        android:text="Total Land"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/tvCultiLand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvName"
+                        android:textColor="@android:color/black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:drawableLeft="@drawable/ic_place_black_24dp"
+                        android:drawablePadding="15dp"
+                        android:text="Cultivated Land"
+                        android:textSize="20sp" />
+
+
+
+                </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/CardView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:text="LOGOUT"
+            android:textColor="@color/tablayoutColor"
+            android:drawableLeft="@drawable/ic_logout1"
+            android:background="@drawable/button_corner"
+            android:layout_marginBottom="50dp"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>
